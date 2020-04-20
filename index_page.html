@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Index </title>
+    <style>
+      *{margin:0; padding:0;}
+      body {border-color :#FFFFFF;}
+      #wrap {width:1200px; margin:0 auto;}
+      #header {width:100%; height:100px; background-color: #2b4962;}
+      #banner {width:100%; height:400px; background-color:#8cafcc;}
+      #content1{overflow:hidden;}
+      #content1 .article1{float: left; width: 100%; height: 250px; background-color: #437299;}
+      #content1 .article2{float: left; width: 100%; height: 250px; background-color: #5c8eb7;}
+
+      #content2{overflow: hidden;}
+      #content2 .article_box1{float: left; width: 33.3333%; height: 300px; background-color: #437299;}
+      #content2 .article_box2{float: left; width: 33.3333%; height: 300px; background-color: #365b7a;}
+      #content2 .article_box3{float: left; width: 33.3333%; height: 300px; background-color: #2b4962;}
+
+      #content3 {overflow: hidden; padding: 5%; background-color: #8cafcc;}
+      #content3 .article_sq1{float: left; width: 23%; height: 200px; margin: 1%; border-radius: 5px; background-color: #5c8eb7;}
+      #content3 .article_sq2{float: left; width: 23%; height: 200px; margin: 1%; border-radius: 5px; background-color: #5c8eb7;}
+      #content3 .article_sq3{float: left; width: 23%; height: 200px; margin: 1%; border-radius: 5px; background-color: #5c8eb7;}
+      #content3 .article_sq4{float: left; width: 23%; height: 200px; margin: 1%; border-radius: 5px; background-color: #5c8eb7;}
+
+      #footer {width: 100% height: 100px; background-color: #505050;}
+
+      /*screen width : 0 ~1200px */
+      @media (max-width: 1240px){
+        #wrap {width: 100%;}
+        #content2 .article_box1 {width: 50%;}
+        #content2 .article_box2 {width: 50%;}
+        #content2 .article_box3 {display: none}
+        #content3 .article_sq1 {width:31.3333%;}
+        #content3 .article_sq2 {width:31.3333%;}
+        #content3 .article_sq3 {width:31.3333%;}
+        #content3 .article_sq4 {display: none}
+      }
+      /*screen width : 0 ~768px */
+      @media (max-width: 768px){
+        #wrap {width: 100%;}
+        #content2 .article_box1 {width: 100%;}
+        #content2 .article_box2 {width: 100%;}
+      }
+
+      /*screen width : 0 ~ 480px */
+      @media (max-width: 480px){
+        #content1 .nav {width: 100%; height:200px;}
+        #content1 .article1 {width: 100%; height:200px;}
+        #content1 .article2 {width: 100%; height:200px;}
+
+        #content3 .article_sq1 {width:98%; border-radius: 5px;}
+        #content3 .article_sq2 {width:98%; border-radius: 5px;}
+        #content3 .article_sq3 {width:98%; border-radius: 5px;}
+      }
+
+    </style>
+  </head>
+  <body>
+      <div id="wrap">
+        <header id="header">
+          <!--<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+          						<h1>write sth</h1>
+                      <ul class="icons">
+
+                        <li><a href="#" class="icon-github"></a></li>
+                        <li><a href="#" class="icon-gmail"></a></li>
+                      </ul>
+-->
+        </header>
+        <section id="banner"></section>
+        <section id="content1">
+          <article class="article1"></article>
+          <article class="article2"></article>
+        </section>
+        <section id="content2">
+          <article class="article_box1">
+            <a href="http://49.50.166.21/snake_ob.html">Snake Game</a>
+          </article>
+          <article class="article_box2">
+            <a href="http://49.50.166.21/snake_ob.html">Indian Porker</a>
+          </article>
+
+          <article class="article_box3">
+            <a href="http://49.50.166.21/tmp.html">Portfolio</a>
+          </article>
+        </section>
+        <section id="content3">
+          <article class="article_sq1">
+          </article>
+          <article class="article_sq2"></article>
+          <article class="article_sq3"></article>
+          <article class="article_sq4"></article>
+        </section>
+        <footer id="footer"></footer>
+
+      </div>
+  </body>
+</html>
